@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-class User {
-  User(
+class UserData {
+  UserData(
       {required this.Email,
       required this.Password,
       required this.Address,
@@ -27,7 +27,7 @@ class User {
   // 회원가입 날짜
   final String SignInDate;
 
-  factory User.fromeJson(Map<String, dynamic> json) => User(
+  factory UserData.fromeJson(Map<String, dynamic> json) => UserData(
         Email: json["Email"],
         Password: json["Password"],
         Address: json["Address"],

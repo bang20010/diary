@@ -21,7 +21,7 @@ class _SignInScreen extends State<SignInScreen> {
   late bool isButtonActive;
 
   @override
-  void initState() {
+  void initState() { // 위젯을 그리고 그 위젯에서 값을 받을때 
     isButtonActive = false;
     super.initState();
     _editColEmail = TextEditingController();
